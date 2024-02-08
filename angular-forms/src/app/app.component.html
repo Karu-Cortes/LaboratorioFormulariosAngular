@@ -1,0 +1,7 @@
+<form [formGroup]="formGroup">
+  <label>Usuario</label>
+  <input name="usuario" formControlName="usuario">
+  <label>Contraseña</label>
+  <input name="contrasena" type="password" formControlName="contrasena">
+  <input type="submit" value="Iniciar Sesión" [disabled]="!formGroup.valid">
+</form>
